@@ -45,7 +45,7 @@ public extension NSCalendar {
     typealias CFType = CFCalendarRef
 
     private var cfObject: CFType {
-        return unsafeBitCast(self, CFCalendarRef.self)
+        return unsafeBitCast(self as NSCalendar, CFCalendarRef.self)
     }
 
 
